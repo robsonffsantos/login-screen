@@ -42,6 +42,7 @@ const LoginScreen = () => {
                         placeholder="Senha"
                         onChangeText={(text: string) => setTypedPassword(text)}
                         value={typedPassword}
+                        secureTextEntry={true}
                     />
                     <TouchableOpacity onPress={handleLogin} style={{ alignItems: 'center' }}>
                         <S.EnterButton>

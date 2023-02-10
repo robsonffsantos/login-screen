@@ -5,7 +5,7 @@ import { useAuth } from '../../context/MyProvider'
 import { useNavigation } from '@react-navigation/native'
 
 const ForgotPasswordScreen = () => {
-    const { email, setEmail, typedEmail, setTypedEmail, setPassword, password } = useAuth()
+    const { email, typedEmail, setTypedEmail, setPassword } = useAuth()
     const navigation = useNavigation()
 
     const ResetPassword = () => {
