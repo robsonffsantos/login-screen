@@ -6,12 +6,12 @@ import { useNavigation } from '@react-navigation/native'
 
 const LoginScreen = () => {
     const [tries, setTries] = useState(0)
-    const { email, password, typedEmail, setTypedEmail, typedPassword, setTypedPassword, setAuth } = useAuth()
+    const { email, password, typedEmail, setTypedEmail, typedPassword, setTypedPassword, setAuth, auth } = useAuth()
     const navigation = useNavigation()
 
     const handleLogin = () => {
-        if (email === typedEmail && password === typedPassword) {
-            setAuth(true)
+        if (email === typedEmail && password === typedPassword && email !== '' && password !== '' ) {
+            setAuth(!auth)
             setTries(0);
             Alert.alert('Sucesso', 'Login realizado com sucesso');
             navigation.navigate('Home')

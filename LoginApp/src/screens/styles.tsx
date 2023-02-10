@@ -73,3 +73,25 @@ export const NormalText = styled.Text`
     padding: 5px;
     text-align: justify;
 `
+
+export const HomeContainer = styled.View`
+    background-color: #fff;
+    height: 80%;
+    width: 80%;
+    border-radius: 36px;
+    align-items: center;
+    flex-direction: column;
+`
+
+export const HomeText = styled.Text`
+    font-size: 32px;
+    color: #000;
+    padding: 5px;
+    text-align: justify;
+    padding-top: 20px;
+`
+
+export const HomeImage = styled.Image`
+    height: 100px;
+    width: 100px;
+`
