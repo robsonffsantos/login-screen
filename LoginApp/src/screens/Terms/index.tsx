@@ -21,8 +21,10 @@ const TermsScreen = () => {
                     <S.NormalText>
                         3 - Em caso de senha esquecida, acesse o atalho na área inicial para resetar sua senha para a senha padrão. Basta inserir o e-mail do cadastro.
                     </S.NormalText>
+                    <S.NormalText>
+                        Atenção: O login não é fixo, sendo necessário fazer o cadastro a cada vez que abrir o aplicativo.
+                    </S.NormalText>
                 </S.MainContainer>
-
         </S.GradientContainer>
     )
 }
