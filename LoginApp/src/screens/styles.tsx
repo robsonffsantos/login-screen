@@ -66,3 +66,10 @@ export const EnterLinks = styled.Text`
 export const TermsLink = styled.Text`
     color: #fff;
 `
+
+export const NormalText = styled.Text`
+    font-size: 14px;
+    color: #000;
+    padding: 5px;
+    text-align: justify;
+`

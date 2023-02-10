@@ -51,19 +51,19 @@ const LoginScreen = () => {
                     </TouchableOpacity>
                 </S.SubContainer>
                 <S.LinksContainer>
-                    <TouchableOpacity onPress={ () =>navigation.navigate('Forgot Password')}>
+                    <TouchableOpacity onPress={ () => navigation.navigate('Forgot Password')}>
                         <S.EnterLinks>
                             Esqueci minha senha
                         </S.EnterLinks>
                     </TouchableOpacity>        
-                    <TouchableOpacity onPress={ () =>navigation.navigate('Register')}>
+                    <TouchableOpacity onPress={ () => navigation.navigate('Register')}>
                         <S.EnterLinks>
                             Não tem conta? Registre-se
                         </S.EnterLinks>
                     </TouchableOpacity>  
                 </S.LinksContainer>                   
             </S.MainContainer>
-            <TouchableOpacity onPress={ () =>navigation.navigate('Terms')}>
+            <TouchableOpacity onPress={ () => navigation.navigate('Terms')}>
                 <S.TermsLink>
                     Termos de Uso
                 </S.TermsLink>
