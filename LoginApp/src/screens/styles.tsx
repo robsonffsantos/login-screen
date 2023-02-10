@@ -10,7 +10,7 @@ export const GradientContainer = styled(LinearGradient)`
 
 export const MainContainer = styled.View`
     background-color: #fff;
-    height: 50%;
+    height: 72%;
     width: 60%;
     border-radius: 36px;
     align-items: center;
@@ -38,7 +38,7 @@ export const AppInput = styled.TextInput`
 
 export const EnterButton = styled.View`
     width: 90%;
-    height: 40%;
+    height: 42%;
     background-color: #7b1fa2;
     flex-direction: row;
     justify-content: center;

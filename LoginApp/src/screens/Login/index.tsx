@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import * as S from './styles'
-import { Alert, Text, TouchableOpacity } from 'react-native'
+import * as S from '../styles'
+import { Alert, TouchableOpacity } from 'react-native'
 import { useAuth } from '../../context/MyProvider'
 import { useNavigation } from '@react-navigation/native'
 
@@ -10,9 +10,10 @@ const LoginScreen = () => {
     const navigation = useNavigation()
 
     const handleLogin = () => {
-        if (email === 'teste@email.com' && password === 'senha123') {
+        if (email === typedEmail && password === typedPassword) {
           setTries(0);
           Alert.alert('Sucesso', 'Login realizado com sucesso');
+          navigation.navigate('Home')
         } else {
           setTries(tries + 1);
           if (tries >= 3) {
