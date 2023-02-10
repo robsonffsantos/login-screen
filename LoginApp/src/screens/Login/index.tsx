@@ -6,14 +6,15 @@ import { useNavigation } from '@react-navigation/native'
 
 const LoginScreen = () => {
     const [tries, setTries] = useState(0)
-    const { email, password, typedEmail, setTypedEmail, typedPassword, setTypedPassword } = useAuth()
+    const { email, password, typedEmail, setTypedEmail, typedPassword, setTypedPassword, setAuth } = useAuth()
     const navigation = useNavigation()
 
     const handleLogin = () => {
         if (email === typedEmail && password === typedPassword) {
-          setTries(0);
-          Alert.alert('Sucesso', 'Login realizado com sucesso');
-          navigation.navigate('Home')
+            setAuth(true)
+            setTries(0);
+            Alert.alert('Sucesso', 'Login realizado com sucesso');
+            navigation.navigate('Home')
         } else {
           setTries(tries + 1);
           if (tries >= 3) {
@@ -36,7 +37,6 @@ const LoginScreen = () => {
                     <S.AppInput
                         placeholder="E-mail"
                         onChangeText={(text: string) => setTypedEmail(text)}
-                        value={typedEmail}
                     />
                     <S.AppInput
                         placeholder="Senha"

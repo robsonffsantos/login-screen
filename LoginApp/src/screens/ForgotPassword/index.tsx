@@ -9,7 +9,11 @@ const ForgotPasswordScreen = () => {
     const navigation = useNavigation()
 
     const ResetPassword = () => {
-        if (typedEmail === '') {
+        if (email) {
+            setPassword('123456')
+            Alert.alert('Sua senha foi resetada', 'use a senha padrão 123456 para entrar na sua conta')
+            navigation.navigate('Login')
+        } else if (typedEmail === '') {
             Alert.alert('Erro', 'Digite um e-mail para continuar')
         } else if(email !== typedEmail) {
             Alert.alert('Erro', 'E-mail não cadastrado')
@@ -29,7 +33,7 @@ const ForgotPasswordScreen = () => {
                     <S.MainTitle>epistemic</S.MainTitle>
                         <S.SubContainer>
                             <S.AppInput
-                                placeholder="E-mail"
+                                placeholder={email || 'e-mail'}
                                 onChangeText={(text: string) => setTypedEmail(text)}
                                 value={email}
                             />
