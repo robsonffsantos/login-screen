@@ -10,23 +10,23 @@ O projeto foi feito com o objetivo de simular uma tela de login de um aplicativo
 
 * Login
   A primeira tela do aplicativo. Nela o usuário insere o e-mail e senha que foi cadastrada para acessar a área Home. Também é possivel, a partir dessa tela, resetar a senha, fazer novo cadastro e ler os termos de uso do aplicativo 
-![image](https://user-images.githubusercontent.com/86332847/218214868-a9a35f9d-2999-4cee-8583-7ad5ac6095a6.png)
+  <img src= "https://user-images.githubusercontent.com/86332847/218214868-a9a35f9d-2999-4cee-8583-7ad5ac6095a6.png" width="150" height="280">
 
 * Recuperar a senha
   Nessa tela o usuário reseta para uma senha padrão a senha esquecida.
-  ![image](https://user-images.githubusercontent.com/86332847/218214972-0f38d8ae-8407-43c8-8bd2-d407237aa6aa.png)
+  <img src= "https://user-images.githubusercontent.com/86332847/218214972-0f38d8ae-8407-43c8-8bd2-d407237aa6aa.png" width="150" height="280">
 
 * Registrar
   Nessa tela o usuário cadastra o e-mail e senha a serem utilizados no apicativo.
-  ![image](https://user-images.githubusercontent.com/86332847/218215059-dd5315d8-387c-4c1c-9e65-928838fd822b.png)
+   <img src= "https://user-images.githubusercontent.com/86332847/218215059-dd5315d8-387c-4c1c-9e65-928838fd822b.png" width="150" height="280">
 
 * Termos de uso
   Nessa tela explico um pouco mais sobre o aplicativo, e como ele funciona
-  ![image](https://user-images.githubusercontent.com/86332847/218215150-ef3d49b2-b4f0-4ffc-97ec-98992d4dfb2e.png)
+  <img src= "https://user-images.githubusercontent.com/86332847/218215150-ef3d49b2-b4f0-4ffc-97ec-98992d4dfb2e.png" width="150" height="280">
 
 * Home
   Tela que o usuário tem acesso ao fazer login com sucesso no aplicativo.
-  ![image](https://user-images.githubusercontent.com/86332847/218215369-77dd6d1e-fe40-4141-9077-bbfde4367141.png)
+  <img src= "https://user-images.githubusercontent.com/86332847/218215369-77dd6d1e-fe40-4141-9077-bbfde4367141.png" width="150" height="280">
 
 ### Ferramentas
 Nesse projeto utilizei as seguintes ferramentas:
