@@ -1,20 +1,36 @@
-import React, { createContext, useState } from 'react';
-import { UserContextProps, UserContextType } from '../types/types';
+import React, { useContext, useState } from 'react';
 
-export const MyContext = createContext(({} as UserContextType)
-);
+type Context = {
+  email: string;
+  password: string;
+  typedEmail: string;
+  typedPassword: string;
+  setEmail: (email: string) => void;
+  setPassword: (password: string) => void;
+  setTypedEmail: (typedEmail: string) => void;
+  setTypedPassword: (typedPassword: string) => void;
+}
 
-const MyProvider = ({ children }: UserContextProps) => {
+export const MyContext = React.createContext(({} as Context))
+
+export function MyProvider ({ children }: any) {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
-
-    const variables = { email, setEmail, password, setPassword }
+    const [typedEmail, setTypedEmail] = useState<string>('')
+    const [typedPassword, setTypedPassword] = useState<string>('')
 
   return (
-    <MyContext.Provider value={{ variables }}>
+    <MyContext.Provider value={{ email, setEmail, password, setPassword, typedEmail, setTypedEmail, typedPassword, setTypedPassword }}>
       {children}
     </MyContext.Provider>
   )
 }
 
-export default MyProvider
+export function useAuth () {
+  const context = useContext(MyContext)
+
+  if (context === undefined) {
+    throw new Error ('erro no contexto')
+  } 
+  return context
+}
