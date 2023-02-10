@@ -14,10 +14,10 @@ type Context = {
 export const MyContext = React.createContext(({} as Context))
 
 export function MyProvider ({ children }: any) {
-    const [email, setEmail] = useState<string>('')
-    const [password, setPassword] = useState<string>('')
-    const [typedEmail, setTypedEmail] = useState<string>('')
-    const [typedPassword, setTypedPassword] = useState<string>('')
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('') 
+  const [typedEmail, setTypedEmail] = useState<string>('')
+  const [typedPassword, setTypedPassword] = useState<string>('')
 
   return (
     <MyContext.Provider value={{ email, setEmail, password, setPassword, typedEmail, setTypedEmail, typedPassword, setTypedPassword }}>

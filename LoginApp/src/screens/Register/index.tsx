@@ -27,12 +27,12 @@ const RegisterScreen = () => {
                         <S.SubContainer>
                             <S.AppInput
                                 placeholder="E-mail"
-                                onChangeText={(text: string) => setEmail(text)}
+                                onChangeText={ text => setEmail(text)}
                                 value={email}
                             />
                             <S.AppInput
                                 placeholder="Senha"
-                                onChangeText={(text: string) => setPassword(text)}
+                                onChangeText={ text => setPassword(text)}
                                 value={password}
                                 secureTextEntry={true}
                             />
